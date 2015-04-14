@@ -44,3 +44,12 @@
     }
 })();
 
+jQuery(function ($) {
+    var path = window.location.href;
+    $('.navbar .nav').find('a').each(function (pos, el) {
+        var $el = $(el);
+        if (path.indexOf($el.attr('href')) >= 0) {
+            $el.parent().addClass('active');
+        }
+    });
+});
