@@ -35,7 +35,9 @@
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="css/style.css">
-        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+        <script src="/js/vendor/modernizr-2.8.3.min.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
 
         <!-- Icons -->
         <!-- 16x16 -->
@@ -106,61 +108,64 @@
 
             <!-- CONTENT BEGIN -->
 
+<!-- INDEX -->
 
-            <div class="jumbotron">
-                <h1>VeloCPPed — <nobr>С++</nobr> митап в Казани</h1>
+<div class="jumbotron">
+    <h1>VeloCPPed — <nobr>С++</nobr> митап в Казани</h1>
 
-                <div class="row">
+    <div class="row">
 
-                    <div class="col-md-6 col-lg-7">
-                        <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/0fgZssjp-NY" frameborder="0" allowfullscreen></iframe>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-5">
-                        <p>В Казани 21 апреля (вторник) в 19:00 пройдет митап посвященный <nobr>С++</nobr> и сопутствующим технологиям. <strong>Вход — свободный!</strong></p>
-                        <p>Чтобы мы могли оценить количество участников, <a href="registration.html">зарегистрируйтесь</a> пожалуйста.</p>
-                    </div>
-                </div>
-
-                <div class="media">
-                    <div class="media-left hidden-xs">
-                        <img class="media-object" src="images/speakers/valiullin_rasim_rustamovich.jpg" alt="Валиуллин Расим Рустамович">
-                    </div>
-                    <div class="media-body clearfix">
-                        <img class="visible-xs-block pull-left" src="images/speakers/valiullin_rasim_rustamovich.jpg" alt="Валиуллин Расим Рустамович">
-                        <h2 class="media-heading">Числа с плавающей запятой. Расим Валиуллин. Тензор</h2>
-                        <p>Два слова о числовых типах в C/C++: числа с фиксированной и плавающей запятой. Основная идея и устройство чисел с плав. зап. Очень сжато ieee-754. Последствия для применения. Пример числа с плавающей запятой и эксперимент по интерпретации полученного образа как float.</p>
-                    </div>
-                </div>
-
-                <div class="media">
-                    <div class="media-left hidden-xs">
-                        <img class="media-object" src="images/speakers/blohin_leonid_nikolaevich.jpg" alt="Блохин Леонид Николаевич">
-                    </div>
-                    <div class="media-body clearfix">
-                        <img class="visible-xs-block pull-left" src="images/speakers/blohin_leonid_nikolaevich.jpg" alt="Блохин Леонид Николаевич">
-                        <h2 class="media-heading">Паттерны Factory и Variant, сильные и слабые стороны. Леонид Блохин. Тензор</h2>
-                        <p>Личный опыт использования шаблонов, с чем приходилось встречаться и что встречается повсеместно. Отдельное внимание к Factory и Variant, их сильные и слабые стороны.</p>
-                    </div>
-                </div>
-
-                <div class="media">
-                    <div class="media-left hidden-xs">
-                        <img class="media-object" src="images/speakers/unkunnown.png" alt="">
-                    </div>
-                    <div class="media-body clearfix text-muted">
-                        <img class="visible-xs-block pull-left " src="images/speakers/unkunnown.png" alt="">
-                        <h2 class="media-heading">Мультипоточность, мультизадачность и связанные с этим паттерны. Алексей</h2>
-                        <p>Доклад в данный момент проходит согласование</p>
-                    </div>
-                </div>
-
-                <div class="text-center">
-                    <a class="btn btn-lg btn-success" href="registration.html" role="button">Я хочу послушать!</a>
-                </div>
-
+        <div class="col-md-6 col-lg-7">
+            <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/0fgZssjp-NY" frameborder="0" allowfullscreen></iframe>
             </div>
+        </div>
+        <div class="col-md-6 col-lg-5">
+            <p>В Казани 21 апреля (вторник) в 19:00 пройдет митап посвященный <nobr>С++</nobr> и сопутствующим технологиям. <strong>Вход — свободный!</strong></p>
+            <p>Чтобы мы могли оценить количество участников, <a href="registration.html">зарегистрируйтесь</a> пожалуйста.</p>
+        </div>
+    </div>
+
+    <div class="media">
+        <div class="media-left hidden-xs">
+            <img class="media-object" src="images/speakers/valiullin_rasim_rustamovich.jpg" alt="Валиуллин Расим Рустамович">
+        </div>
+        <div class="media-body clearfix">
+            <img class="visible-xs-block pull-left" src="images/speakers/valiullin_rasim_rustamovich.jpg" alt="Валиуллин Расим Рустамович">
+            <h2 class="media-heading">Числа с плавающей запятой. Расим Валиуллин. Тензор</h2>
+            <p>Два слова о числовых типах в C/C++: числа с фиксированной и плавающей запятой. Основная идея и устройство чисел с плав. зап. Очень сжато ieee-754. Последствия для применения. Пример числа с плавающей запятой и эксперимент по интерпретации полученного образа как float.</p>
+        </div>
+    </div>
+
+    <div class="media">
+        <div class="media-left hidden-xs">
+            <img class="media-object" src="images/speakers/blohin_leonid_nikolaevich.jpg" alt="Блохин Леонид Николаевич">
+        </div>
+        <div class="media-body clearfix">
+            <img class="visible-xs-block pull-left" src="images/speakers/blohin_leonid_nikolaevich.jpg" alt="Блохин Леонид Николаевич">
+            <h2 class="media-heading">Паттерны Factory и Variant, сильные и слабые стороны. Леонид Блохин. Тензор</h2>
+            <p>Личный опыт использования шаблонов, с чем приходилось встречаться и что встречается повсеместно. Отдельное внимание к Factory и Variant, их сильные и слабые стороны.</p>
+        </div>
+    </div>
+
+    <div class="media">
+        <div class="media-left hidden-xs">
+            <img class="media-object" src="images/speakers/unkunnown.png" alt="">
+        </div>
+        <div class="media-body clearfix text-muted">
+            <img class="visible-xs-block pull-left " src="images/speakers/unkunnown.png" alt="">
+            <h2 class="media-heading">Мультипоточность, мультизадачность и связанные с этим паттерны. Алексей</h2>
+            <p>Доклад в данный момент проходит согласование</p>
+        </div>
+    </div>
+
+    <div class="text-center">
+        <a class="btn btn-lg btn-success" href="registration.html" role="button">Я хочу послушать!</a>
+    </div>
+
+</div>
+
+<!--/ INDEX -->
 
 
             <!-- CONTENT END -->
@@ -171,8 +176,6 @@
         </div> <!-- /container -->
 
 
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
         <script src="js/vendor/bootstrap.min.js"></script>
         <script src="js/plugins.js"></script>
         <!--<script src="js/main.js"></script>-->
