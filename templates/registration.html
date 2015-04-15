@@ -49,11 +49,24 @@
         </div>
     </form>
 
+    <p>Вопросы можно задать в чате ниже, а так же лично мне:</p>
+
+    <dl class="dl-horizontal">
+        <dt></dt>
+        <dd><strong>Григорчук Константин</strong></dd>
+        <dt>Тел.</dt>
+        <dd>8-919-689-70-67</dd>
+        <dt>Skype</dt>
+        <dd>grigorchuk.konstantin</dd>
+        <dt>Email</dt>
+        <dd>grigorchuk.konstantin@gmail.com</dd>
+    </dl>
+
 </div>
 
 <script type="application/javascript">
     (function () {
-        if (window.location.href.indexOf('?result=ok') === -1) {
+        if (window.location.href.indexOf('result=ok') === -1) {
             document.getElementById('reg-ok').className += ' hidden';
         }
     }());
@@ -63,6 +76,6 @@
 </script>
 
 <!-- 1081145602 - Random number -->
-<iframe id="hidden_iframe_1081145602" name="hidden_iframe_1081145602" onload="if(window.submitted_1081145602){window.location='registration.html';}" style="display: none;"></iframe>
+<iframe id="hidden_iframe_1081145602" name="hidden_iframe_1081145602" onload="if(window.submitted_1081145602){window.location='registration.html?result=ok';}" style="display: none;"></iframe>
 
 <!--/ Registration -->
