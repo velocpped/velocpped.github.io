@@ -1,7 +1,102 @@
-<div class="alert alert-danger" role="alert" style="max-width: 450px; margin: 0 auto;">
-    <h1 style="margin-top: 0">Страница еще не готова</h1>
+<!--
+        Подключаем API карт 2.x
+        Параметры:
+          - load=package.full - полная сборка;
+	      - lang=ru-RU - язык русский.
+    -->
+<script type="text/javascript" src="http://api-maps.yandex.ru/2.0/?load=package.full&lang=ru-RU"></script>
 
-    <button type="button" class="btn btn-default" onclick="history.back();">Назад</button>
+<script type="text/javascript">
+    (function () {
+        // Как только будет загружен API и готов DOM, выполняем инициализацию
+        ymaps.ready(init);
 
-    <a href="http://velocpped.ru/" class="btn btn-success">На главную</a>
+        // Карта заполняет своим содержимым контейнер, в котором она размещается.
+        // Т. е. в момент инициализации карта должна иметь возможность определить
+        // размеры контейнера.
+        // Если в момент инициализации карты контейнер еще не сформирован,
+        // размеры карты будут нулевыми (0x0), т. е. она фактически не будет отображена.
+
+        function init () {
+            var myMap = new ymaps.Map('map-placeholder', {
+                center: [55.790337, 49.105866],
+                zoom: 18
+            });
+
+            myMap.controls.add('mapTools');
+            myMap.controls.add('zoomControl');
+
+            myGeoObject = new ymaps.GeoObject({
+                geometry: {
+                    type: "Point",// тип геометрии - точка
+                    coordinates: [55.790270, 49.106106] // координаты точки
+                }
+            });
+            myMap.geoObjects.add(myGeoObject); // Размещение геообъекта на карте.
+
+            /*$('#tabs').bind('tabsselect', function (event, ui) {
+                myMap.setCenter([56.857239, 35.884246]);// Тверь
+            });*/
+        }
+
+        //        // Другой способ.
+        //        function init() {
+        //
+        //            $('#tabs').tabs();
+        //
+        //            var myMap = new ymaps.Map('map-placeholder', {
+        //                center: [56.857239, 35.884246],// Тверь
+        //                zoom: 10
+        //            });
+        //            // Если опустить нижеследующее $('#tabs').bind('tabsshow' ...,
+        //            // карта отображена не будет, т. к. к этому моменту размеры
+        //            // её контейнера еще не определены.
+        //
+        //            // Выставляем центр и размеры карты каждый раз
+        //            // при отображении содержимого вкладки
+        //            $('#tabs').bind('tabsshow', function(event, ui) {
+        //                myMap.setCenter([56.857239, 35.884246]);
+        //                myMap.container.fitToViewport();
+        //            });
+        //
+        //        }
+
+        // И еще один способ.
+        // Добиться отображения карты в скрытой вкладке можно также с помощью
+        // модификации CSS-стилей, используемых JQuery UI.
+        // Для неактивных вкладок JQuery UI выставляет свойство display: none.
+        // Элемент, для которого свойство display выставлено в none, не возвращает
+        // свои размеры.
+        // Скрыть элемент можно альтернативным способом.
+        // Например, так (для JQuery UI):
+        // .ui-tabs .ui-tabs-hide {
+        //    position: absolute;
+        //    left: -10000px;
+        // }
+    } ());
+</script>
+
+<div class="jumbotron">
+
+    <h1>С++ митап в Казани</h1>
+
+    <p>Митап VeloCPPed пройдет 21 апреля в 19:00 по адресу Московская 24, офис компании Тензор. Ждем всех желающих. <strong>Вход — свободный!</strong></p>
+
+    <div id="map-placeholder" style="width: 550px; height: 300px;"></div>
+
+    <br/>
+    <p>Вход с угла (вход в кофейню). На входе будет ждать девушка с бейджиком - она вам подскажет куда идти. Если всетаки вы припозднитесь: в тамбуре налево и по лестнице на второй этаж.</p>
+    <p>Вопросы можно задать в чате ниже, а так же лично мне:</p>
+
+    <dl class="dl-horizontal">
+        <dt></dt>
+        <dd><strong>Григорчук Константин</strong></dd>
+        <dt>Тел.</dt>
+        <dd>8-919-689-70-67</dd>
+        <dt>Skype</dt>
+        <dd>grigorchuk.konstantin</dd>
+        <dt>Email</dt>
+        <dd>grigorchuk.konstantin@gmail.com</dd>
+    </dl>
+
 </div>
