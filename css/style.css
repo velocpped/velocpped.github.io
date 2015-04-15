@@ -16,3 +16,18 @@ body {
 .jumbotron > h1 {
     margin-top: 0;
 }
+
+
+#footer {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#footer .social-icon {
+    display: inline-block;
+    margin: 6px;
+}
+
+#footer .social-icon.inline img {
+    margin-left: 6px;
+}
