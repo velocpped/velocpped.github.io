@@ -15,7 +15,8 @@ module.exports = function(grunt) {
                     'i-am-smart.html': ['templates/_header.html', 'templates/i-am-smart.html', 'templates/_footer.html'],
                     'speakers.html': ['templates/_header.html', 'templates/speakers.html', 'templates/_footer.html'],
                     'all.html': ['templates/_header.html', 'templates/all.html', 'templates/_footer.html'],
-                    'place.html': ['templates/_header.html', 'templates/place.html', 'templates/_footer.html']
+                    'place.html': ['templates/_header.html', 'templates/place.html', 'templates/_footer.html'],
+                    'man.html': ['templates/_header.html', 'templates/man.html', 'templates/_footer.html']
                 }
             }
         }
