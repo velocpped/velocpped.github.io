@@ -1,3 +1,4 @@
+
 <!doctype html>
 <!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
@@ -5,37 +6,37 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
 <head>
 <meta charset="utf-8">
-<title>Леонид Блохин  &#8211; VeloCPPed</title>
+<title>Почему Docker — это круто? &#8211; Kostroma Backend Meetup</title>
 
+<meta name="keywords" content="docker">
 
-
-
+  
 
 <!-- Twitter Cards -->
-<meta name="twitter:title" content="14 апреля 2016">
+<meta name="twitter:title" content="Почему Docker — это круто?">
 
 
-
+<meta name="twitter:creator" content="@lexaguskov">
 
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="/images/sqare.jpg">
+<meta name="twitter:image" content="/images/site-logo.png">
 
 <!-- Open Graph -->
 <meta property="og:locale" content="ru_RU">
 <meta property="og:type" content="article">
-<meta property="og:title" content="14 апреля 2016">
+<meta property="og:title" content="Почему Docker — это круто?">
 
-<meta property="og:url" content="/">
-<meta property="og:site_name" content="VeloCPPed">
-
-
+<meta property="og:url" content="/talks/docker/">
+<meta property="og:site_name" content="Kostroma Backend Meetup">
 
 
 
+<meta name='yandex-verification' content='455ee2f525bd2407' />
 
 
-<link rel="canonical" href="/">
-<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="VeloCPPed">
+
+<link rel="canonical" href="/talks/docker/">
+<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Kostroma Backend Meetup Feed">
 <link rel="author" href="http://plus.google.com/+u/0/communities/108981293393748913369?rel=author">
 
 <!-- http://t.co/dKP3o1e -->
@@ -44,7 +45,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- For all browsers -->
-<link rel="stylesheet" href="/css/main.css">
+<link rel="stylesheet" href="/assets/css/main.css">
 <!-- Webfonts -->
 <script src="//use.edgefonts.net/source-sans-pro:n4;source-code-pro:n4,n7.js"></script>
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,700,300,600,800&subset=cyrillic,latin' rel='stylesheet' type='text/css'>
@@ -57,7 +58,7 @@
 <![endif]-->
 
 <!-- Modernizr -->
-<script src="/js/modernizr-2.7.1.custom.min.js"></script>
+<script src="/assets/js/vendor/modernizr-2.7.1.custom.min.js"></script>
 
 <!-- Icons -->
 <!-- 16x16 -->
@@ -75,7 +76,7 @@
 
 </head>
 
-<body id="page">
+<body id="post">
 
 <div class="navigation-wrapper">
 	<nav role="navigation" id="site-nav" class="animated drop">
@@ -84,32 +85,32 @@
 		    
 		        
 		    
-		    <li><a href="/index.html" >14/04/2016</a></li>
+		    <li><a href="/" >26/03/2016</a></li>
 		  
 		    
 		        
 		    
-		    <li><a href="/about.html" >О проекте</a></li>
+		    <li><a href="/about/" >О проекте</a></li>
 		  
 		    
 		        
 		    
-		    <li><a href="/people.html" >Люди</a></li>
+		    <li><a href="/people/" >Люди</a></li>
 		  
 		    
 		        
 		    
-		    <li><a href="/events.html" >Встречи</a></li>
+		    <li><a href="/events/" >Встречи</a></li>
 		  
 		    
 		        
 		    
-		    <li><a href="/register.html" >Регистрация</a></li>
+		    <li><a href="/register/" >Регистрация</a></li>
 		  
 		    
 		        
 		    
-		    <li><a href="/speakers.html" >Предложить доклад</a></li>
+		    <li><a href="/speakers/" >Предложить доклад</a></li>
 		  
         <li class="dosearch"><span><i class="fa fa-search"></i> Поиск</span></li>
 	    </ul>
@@ -134,52 +135,55 @@
     <div class="l2"></div>
     <div class="l3"></div>
 </div>-->
-<a href="" class="site-logo" rel="home" title="VeloCPPed"><img src="/images/sqare.jpg" width="200" height="200" alt="VeloCPPed logo" class="animated fadeInUp"></a>
+<a href="" class="site-logo" rel="home" title="Kostroma Backend Meetup"><img src="/images/site-logo.png" width="200" height="200" alt="Kostroma Backend Meetup logo" class="animated fadeInUp"></a>
 
-        <h1 class="site-title animated fadeIn"><a href="">VeloCPPed</a></h1>
-		<h2 class="site-description animated fadeIn" itemprop="description">Место встречи С++ разработчиков в Казани</h2>
+        <h1 class="site-title animated fadeIn"><a href="">Kostroma Backend Meetup</a></h1>
+		<h2 class="site-description animated fadeIn" itemprop="description">Место встречи Костромских backend-разработчиков и системных администраторов</h2>
 	</div>
 </header><!-- /.masthead -->
+
 <div class="js-menu-screen menu-screen"></div>
 
 <div id="main" role="main">
   <article class="hentry">
-       <header class="entry-header">
-       
+    
+    <div class="entry-wrapper">
+      <header class="entry-header">
+        <span class="entry-tags"><a href="/tags/#docker" title="Pages tagged docker">docker</a></span>
         
-          <h1 class="entry-title">Паттерны Factory и Variant, сильные и слабые стороны. </h1>
+          <h1 class="entry-title">Почему Docker — это круто?</h1>
         
       </header>
-    <div class="entry-wrapper">
-   
       <footer class="entry-meta">
         
           
             
             
-              <img src="unknow.jpg" class="bio-photo" alt="Леонид Блохин bio photo"></a>
+              <img src="/images/lexaguskov.jpg" class="bio-photo" alt="Алексей Гуськов bio photo"></a>
             
-            <span class="author vcard"><span class="fn">Леонид Блохин</span></span>
+            <span class="author vcard"><span class="fn">Алексей Гуськов</span></span>
           
         
-        <span class="entry-date date published"></span>
+        <span class="entry-date date published"><time datetime="2015-11-21T13:00:00+03:00"><i class="fa fa-calendar-o"></i> November 21, 2015</time></span>
         
-
-      
-        
-                <span class="entry-comments"><img src="2.png"> <a href="#disqus_thread">Comment</a></span>
-   
-
-
+        <span class="entry-comments"><i class="fa fa-comment-o"></i> <a href="#disqus_thread">Comment</a></span>
+        <span class="social-share-twitter">
+  <a href="https://twitter.com/intent/tweet?hashtags=docker&amp;text=Почему%20Docker%20—%20это%20круто?&amp;url=/talks/docker/&amp;via=lexaguskov" title="Share on Twitter" itemprop="Twitter"><i class="fa fa-twitter-square"></i> Tweet</a>
+</span>
+<span class="social-share-facebook">
+  <a href="https://www.facebook.com/sharer/sharer.php?u=/talks/docker/" title="Share on Facebook" itemprop="Facebook"><i class="fa fa-facebook-square"></i> Like</a>
+</span>
+<span class="social-share-googleplus">
+  <a href="https://plus.google.com/share?url=/talks/docker/" title="Share on Google Plus" itemprop="GooglePlus"><i class="fa fa-google-plus-square"></i> +1</a>
+</span>
+<!-- /.social-share -->
         
       </footer>
       <div class="entry-content">
-        <p>Личный опыт использования шаблонов, с чем приходилось встречаться и что встречается повсеместно. Отдельное внимание к Factory и Variant, их сильные и слабые стороны.</p>
+        <p>Я расскажу о том, что такое Docker, зачем он нужен, что он меняет и почему разработчики и системные администраторы
+должны вот прямо сейчас всё бросать и бежать его использовать. Ну и немножечко о юзкейсах, косяках, и своём опыте.</p>
 
-<iframe width="700" height="345" src="https://www.youtube.com/embed/xXkFCKNTbj0" frameborder="0" allowfullscreen=""></iframe>
-
-
-    
+<iframe width="560" height="315" src="//www.youtube.com/embed/TguVA-qTrmc?start=270" frameborder="0" allowfullscreen=""></iframe>
 
         
         
@@ -188,20 +192,12 @@
     </div><!-- /.entry-wrapper -->
     <nav class="pagination" role="navigation">
       
-        <a href="03_valiullin.html" class="btn" title="Числа с плавающей запятой.">Previous</a>
+        <a href="/talks/clojure/" class="btn" title="Clojure — Lisp для 21-го века">Previous</a>
       
       
-        <a href="01_mergasov.html" class="btn" title="Многозадачность в С++. Обзор паттернов проектирования">Next</a>
+        <a href="/talks/it_cluster_of_kostroma/" class="btn" title="IT-кластер Костромы. Мысли вслух">Next</a>
       
     </nav><!-- /.pagination -->
-  </article>
-</div><!-- /#main -->
-
-
-  
-        <div id="disqus_thread"></div><!-- /#disqus_thread -->
-      </div><!-- /.entry-content -->
-    </div><!-- /.entry-wrapper -->
   </article>
 </div><!-- /#main -->
 
@@ -209,24 +205,26 @@
   <footer role="contentinfo" class="entry-wrapper">
     
 
-<span>&copy; 2016 VeloCPPed Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> using the <a href="http://mademistakes.com/so-simple/" rel="nofollow">So Simple Theme</a>.</span>
+<span>&copy; 2016 Kostroma Backend Meetup. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> using the <a href="http://mademistakes.com/so-simple/" rel="nofollow">So Simple Theme</a>.</span>
 <div class="social-icons">
 	
 	
-	<a href="https://plus.google.com/116648972722744985746" title="VeloCPPed on Google+" target="_blank"><img src="google+.png" alt="VeloCPPed в Google+"></a>
+	<a href="http://plus.google.com/u/0/communities/108981293393748913369" title="Kostroma Backend Meetup on Google+" target="_blank"><i class="fa fa-google-plus-square fa-2x"></i></a>
 	
 	
 	
 	
 	
 	
-
+	<a href="http://vk.com/itcommunity44" title="Kostroma Backend Meetup on VKontakte" target="_blank"><i class="fa fa-vk fa-2x"></i></a>
+	<a href="http://yarfrontend.ru" title="Дружественный митап YarFrontend" target="_blank"><i class="fa fa-arrow-up fa-2x"></i></a>
+  <a href="/feed.xml" title="Atom/RSS feed"><i class="fa fa-rss-square fa-2x"></i></a>
 </div><!-- /.social-icons -->
   </footer>
 </div><!-- /.footer-wrapper -->
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="/js/jquery-1.9.1.min.js"><\/script>')</script>
+<script>window.jQuery || document.write('<script src="/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
 <script src="/assets/js/scripts.min.js"></script>
 
 <!-- Jekyll Simple Search option -->
@@ -240,6 +238,7 @@
           noResults: '<p>Nothing found.</p>'
         });
   });
+
   (function( $, window, undefined ) {
     
      var bs = {
@@ -273,26 +272,27 @@
     (function (d, w, c) {
         (w[c] = w[c] || []).push(function() {
             try {
-                w.yaCounter36380000 = new Ya.Metrika({
-                    id:36380000,
+                w.yaCounter27264830 = new Ya.Metrika({id:33311813,
+                    webvisor:true,
                     clickmap:true,
                     trackLinks:true,
-                    accurateTrackBounce:true
-                });
+                    accurateTrackBounce:true});
             } catch(e) { }
         });
+
         var n = d.getElementsByTagName("script")[0],
-            s = d.createElement("script"),
-            f = function () { n.parentNode.insertBefore(s, n); };
+                s = d.createElement("script"),
+                f = function () { n.parentNode.insertBefore(s, n); };
         s.type = "text/javascript";
         s.async = true;
-        s.src = "https://mc.yandex.ru/metrika/watch.js";
+        s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+
         if (w.opera == "[object Opera]") {
             d.addEventListener("DOMContentLoaded", f, false);
         } else { f(); }
     })(document, window, "yandex_metrika_callbacks");
 </script>
-<noscript><div><img src="https://mc.yandex.ru/watch/36380000" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<noscript><div><img src="//mc.yandex.ru/watch/33311813" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 <!-- /Yandex.Metrika counter -->
 
 <!-- VK -->
@@ -304,13 +304,15 @@
   
 <script type="text/javascript">
     /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-    var disqus_shortname = 'velocpped'; // required: replace example with your forum shortname
+    var disqus_shortname = 'kosbackend'; // required: replace example with your forum shortname
+
     /* * * DON'T EDIT BELOW THIS LINE * * */
     (function() {
         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
         dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
         (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
     })();
+
     /* * * DON'T EDIT BELOW THIS LINE * * */
     (function () {
         var s = document.createElement('script'); s.async = true;
@@ -323,7 +325,7 @@
 <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
 
 
-          
+	        
 
 </body>
 </html>
